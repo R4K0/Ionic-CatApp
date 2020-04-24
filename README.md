@@ -19,6 +19,7 @@ I'd have used infinite scroll views that are bundled with ionic, but I couldn't 
 
 ## Credits:
 2 RESTful API's were used in this project.
+
 https://catfact.ninja/ - For facts!
 
 https://thecatapi.com/ - For random cat pictures!
