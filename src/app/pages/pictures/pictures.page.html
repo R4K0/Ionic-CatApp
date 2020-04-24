@@ -1,0 +1,11 @@
+<ion-content style="overflow: auto;" #content>
+  <div *ngFor="let catpic of this.catPics">
+    <app-catcard [picURL]="catpic.url" [breeds]="catpic.breeds" [ParentView]="content"></app-catcard>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" style="margin-right: 8px;">
+    <ion-fab-button (click)="getPictures()" size="big">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

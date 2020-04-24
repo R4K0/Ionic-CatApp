@@ -1,5 +1,7 @@
 {
   "name": "catapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

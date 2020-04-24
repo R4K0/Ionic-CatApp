@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-list>
+    <app-catfact *ngFor="let fact of catFacts" [ID]="fact.ID" [content]="fact.content"></app-catfact>
+  </ion-list>
+
+  <div class="more">
+    <ion-button (click)="loadMore()">
+      Load More
+    </ion-button>
+  </div>
+</ion-content>

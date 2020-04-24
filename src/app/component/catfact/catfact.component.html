@@ -1,0 +1,20 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>
+      Cat Fact
+
+      <ion-badge>{{ this.ID }}</ion-badge>
+    </ion-card-title>
+  </ion-card-header>
+
+
+  <ion-card-content>
+    <div>
+      <ion-label>
+        {{ this.content }}
+      </ion-label>
+    </div>
+
+    <ion-icon name="{{ this.isFavourite() && 'heart' || 'heart-outline' }}" class="heart" (click)="addToFavourites()" [ngStyle]="{'color': this.isFavourite() && 'crimson' || undefined}">Favourite</ion-icon>
+  </ion-card-content>
+</ion-card>
