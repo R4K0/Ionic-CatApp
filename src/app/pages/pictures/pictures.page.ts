@@ -7,14 +7,24 @@ import { AlertController } from '@ionic/angular';
   templateUrl: './pictures.page.html',
   styleUrls: ['./pictures.page.scss'],
 })
-export class PicturesPage implements OnInit {
+export class PicturesPage {
   @ViewChild('content', { static: false }) private content: any;
 
   catPics: Object[] = [];
+  firstEnter: boolean = true;
 
   constructor(private catService: FactfetcherService, private alertController: AlertController ) { }
 
-  ngOnInit() {
+  ionViewDidEnter() {
+    if(this.firstEnter == false){
+      return;
+    }
+
+    for(let i = 0; i < 3; i++){
+      this.getPictures();
+    }
+
+    this.firstEnter = false;
   }
   
   getPictures(){
