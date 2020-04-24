@@ -3,7 +3,7 @@
 
   <span><ion-img [src]='picURL' alt="Loading..." (ionImgDidLoad)="finishedLoading()" (ionImgWillLoad)="startLoading()"></ion-img></span>
 
-  <ion-card-content *ngIf="this.breeds.length != 0 && ( !this.isLoading && this.picURL) ">
+  <ion-card-content *ngIf="this.breeds.length != 0 && ( this.isLoading == false && this.picURL != undefined) ">
     <div *ngFor="let breed of this.breeds" >
       <ion-card-title>{{ breed.name }}</ion-card-title>
       <ion-card-subtitle> {{ breed.description }} </ion-card-subtitle>
