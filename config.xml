@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Cat App</name>
+    <name>G00376658</name>
     <description>A cat facts/pictures app made by Milosz Milewski for his GMIT Mobile App project - G00376658.</description>
     <author email="G00376658@gmit.ie" href="http://ionicframework.com/">Milosz Milewski G00376658</author>
     <content src="index.html" />
