@@ -16,7 +16,7 @@ import { CatModule } from "../../modules/cat-module/cat-module.module"
     FormsModule,
     IonicModule,
     PicturesPageRoutingModule,
-    CatModule
+    CatModule,
   ],
   declarations: [PicturesPage]
 })

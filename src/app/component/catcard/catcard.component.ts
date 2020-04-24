@@ -6,6 +6,14 @@ import { IonContent } from "@ionic/angular";
   templateUrl: './catcard.component.html',
   styleUrls: ['./catcard.component.scss'],
 })
+
+/*
+  Component for the picture card, I pass in the parent view via property binding from the pictures page so I can use the
+  finishedLoading callbacks of ion-img to scroll down the page when content is loaded.
+  
+  ion-img only loads when the picture is in-view.
+*/
+
 export class CatcardComponent{
   @Input()
   ParentView: IonContent;
@@ -15,6 +23,9 @@ export class CatcardComponent{
 
   @Input()
   picURL: String;
+
+  @Input()
+  personality: String[];
 
   isLoading: boolean = false;
 
@@ -37,7 +48,7 @@ export class CatcardComponent{
     if( this.ParentView == null ){
       return;
     }
-    
+
     this.ParentView.scrollToBottom(200)    
   }
 }

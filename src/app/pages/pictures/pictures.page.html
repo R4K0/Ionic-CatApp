@@ -1,9 +1,19 @@
-<ion-content style="overflow: auto;" #content>
-  <div *ngFor="let catpic of this.catPics">
-    <app-catcard [picURL]="catpic.url" [breeds]="catpic.breeds" [ParentView]="content"></app-catcard>
-  </div>
+<ion-content [forceOverscroll]="true" #content >
+  <ion-list>
+    <app-catcard *ngFor="let catpic of this.catPics" [picURL]="catpic.url" [breeds]="catpic.breeds" [ParentView]="content" [personality]="catpic.splitbreeds"></app-catcard>
+  </ion-list>
+
+  <!-- Infinite Scroll seems broken, what a shame... I have to work with buttons-->
+  <!-- <ion-infinite-scroll threshold="1000px" (ionInfinite)="getPictures($event)" position="bottom">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Combing the litterbox for pictures">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll> -->
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" style="margin-right: 8px;">
+    <ion-fab-button size="small" color="success" (click)="showInfo()">
+      <ion-icon name="information"></ion-icon>
+    </ion-fab-button> 
+
     <ion-fab-button (click)="getPictures()" size="big">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>

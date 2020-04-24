@@ -7,6 +7,11 @@
     <div *ngFor="let breed of this.breeds" >
       <ion-card-title>{{ breed.name }}</ion-card-title>
       <ion-card-subtitle> {{ breed.description }} </ion-card-subtitle>
+      <div><ion-badge *ngFor="let personality of this.personality" style="margin-right: 4px;">{{ personality }}</ion-badge></div>
+
+      <ion-card-title style="margin-top: 4px;">Life Span</ion-card-title>
+      {{ breed.life_span }}
     </div>
+
   </ion-card-content>
 </ion-card>
