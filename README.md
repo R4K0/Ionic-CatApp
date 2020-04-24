@@ -6,7 +6,7 @@ https://wakatime.com/@Rako/projects/vpgphgkrte?start=2020-04-18&end=2020-04-24
 
 ## Cloning & Getting development instance set-up:
 * Clone this repository to a seperate folder
-* CMD into the folder
+* Open CMD/Terminal and cd into the directory
 * Run "npm install" to install required dependencies, this will take a while. (Ensure you have installed node.js and npm is in your PATH)
 * If you haven't already, install Ionic CLI - "npm install -g @ionic/cli"
 * Run "ionic serve"
