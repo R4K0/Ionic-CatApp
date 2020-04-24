@@ -1,4 +1,4 @@
-# Ionic-CatApp
+# Ionic-CatApp (G00376658)
 Cat App written using mobile technologies (Ionic &amp; Angular)
 
 This app was created as a part of my Mobile Development module @ GMIT Software Development Course in under 2 days. (WakaTime statistics show that this app was developed in a litte bit over 10 hours! Hoorah!)
