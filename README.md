@@ -2,6 +2,7 @@
 Cat App written using mobile technologies (Ionic &amp; Angular)
 
 This app was created as a part of my Mobile Development module @ GMIT Software Development Course in under 2 days. (WakaTime statistics show that this app was developed in a litte bit over 10 hours! Hoorah!)
+https://wakatime.com/@Rako/projects/vpgphgkrte?start=2020-04-18&end=2020-04-24
 
 ## Cloning & Getting development instance set-up:
 * Clone this repository to a seperate folder
