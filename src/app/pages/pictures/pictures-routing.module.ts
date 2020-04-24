@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PicturesPage } from './pictures.page';
 
+/*
+  Routing rules had to be rewritten for the tabinated navigation.
+*/
+
 const routes: Routes = [
   {
     path: '',
